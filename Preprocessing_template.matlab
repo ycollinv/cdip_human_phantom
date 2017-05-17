@@ -112,24 +112,24 @@ opt.region_growing.flag_skip = 1; % Turn on/off the region growing
 
 %%%%%Options not in this script but present in the tutorial:
     %%% Motion parameters
-    %% Apply regression of motion parameters (true/false)
-        % opt.regress_confounds.flag_motion_params = true;
+    %% Apply regression of motion parameters (true/false) 
+        % opt.regress_confounds.flag_motion_params = true; DEFAULT FALSE
         %% Reduce the dimensionality of motion parameters with PCA (true/false)
-        % opt.regress_confounds.flag_pca_motion = true;
+        % opt.regress_confounds.flag_pca_motion = true; DEFAULT TRUE
         %% How much variance of motion parameters (with squares) to retain
-        % opt.regress_confounds.pct_var_explained = 0.95;
+        % opt.regress_confounds.pct_var_explained = 0.95; DEFAULT 0.95
 
     %%% White matter & ventricular signals
         %% Apply average white matter signal regression (true/false)         
-        %opt.regress_confounds.flag_wm = true;
+        %opt.regress_confounds.flag_wm = true; DEFAULT TRUE
         %% Apply average ventricle signal regression (true/false)         
-        %opt.regress_confounds.flag_vent = true;
+        %opt.regress_confounds.flag_vent = true; DEFAULT TRUE
         %% Apply anat COMPCOR (white matter+ventricles, true/false) (We recommend not using FLAG_WM and FLAG_VENT together with FLAG_COMPCOR)
-        % opt.regress_confounds.flag_compcor = false;
+        % opt.regress_confounds.flag_compcor = false; DEFAULT FALSE
 
     %%% Global signal
         %% Apply global signal regression (true/false)         
-        % opt.regress_confounds.flag_gsc = true; 
+        % opt.regress_confounds.flag_gsc = true; DEFAULT TRUE
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
