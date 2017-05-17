@@ -9,12 +9,13 @@ path_preprocess     = 'data/porban_preprocess_1.0.0/';
 %% Files_in
 sites  = {'CHUS','CINQ','UNF','MNI'};
 
+  %%averaged t1 file
+  fmrirun = dir([path_raw filesep site filesep site '_1' filesep 'anat' filesep '*.mnc']);
+  anat = [path_raw filesep site filesep site '_1' filesep 'anat' filesep fmrirun.name];
+    
+  %%fmri files
 for s = 1:length(sites)
     site = sites{s};
-    
-    %anat
-    fmrirun = dir([path_raw filesep site filesep site '_1' filesep 'anat' filesep '*.mnc']);
-    anat = [path_raw filesep site filesep site '_1' filesep 'anat' filesep fmrirun.name];
     
     %session1
     fmrirun = dir([path_raw filesep site filesep site '_1' filesep 'rest' filesep '*.mnc']);
