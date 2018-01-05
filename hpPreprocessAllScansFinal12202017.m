@@ -2,9 +2,9 @@ clear all
 
 %% Data localisation
 %path_home        = getenv('HOME');
-path_raw         = ['old/HpFinalNOGOOD/HP_raw'];
-path_anat        = ['HpFinalt1AverageFINAL12192017'];
-path_preprocess  = ['HpPreprocessFinal12202017';];
+path_raw         = ['cdip_human_phantom/HP_raw'];
+path_anat        = ['cdip_human_phantom/HpFinalt1AverageFINAL12192017'];
+path_preprocess  = ['cdip_human_phantom/HpPreprocessFinal12202017';];
 
 %% Files_in
 subjects = { 'ssimon' };
