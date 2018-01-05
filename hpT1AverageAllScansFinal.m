@@ -2,8 +2,8 @@ clear all
 
 %%Data
 %path_home    = getenv('HOME');
-path_raw     = ['old/HpFinalNOGOOD/HP_raw'];
-path_out     = ['HpFinalt1AverageFINAL12192017'];
+path_raw     = ['cdip_human_phantom/HP_raw'];
+path_out     = ['cdip_human_phantom/HpFinalt1AverageFINAL12192017'];
 
 %%T1 files 
 sites  = {'CHUM', 'EDM', 'RRI', 'SASK', 'SUN', 'TWH', 'VIC', 'CHUS' , 'CINQ' , 'IUGM' , 'ISMD' , 'MNI'};
